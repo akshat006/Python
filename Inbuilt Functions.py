@@ -210,20 +210,132 @@ l1[2][2].append(70)
 l1
 
 
-# In[23]:
+# In[3]:
 
 
 l2 = [1,2,[3,4,5,6],9]
 
 
-# In[24]:
+# In[4]:
 
 
 l2[2].append([7,8])
 
 
-# In[25]:
+# In[5]:
 
 
 l2
+
+
+# In[6]:
+
+
+mydict = {
+    "color": "Blue",
+    "brand": "VW"
+}
+
+
+# In[7]:
+
+
+mydict.update({"Cost":1000000.00})
+
+
+# In[8]:
+
+
+mydict
+
+
+# In[9]:
+
+
+mydict.keys()
+
+
+# In[10]:
+
+
+mydict.items()
+
+
+# In[11]:
+
+
+mylist1 = [10,3,2,1,4]
+mylist2 = [7,2,3.4]
+
+mylist3 = mylist1 + mylist2
+mylist3
+
+
+# In[14]:
+
+
+myset = {1,2,3}
+
+
+# In[15]:
+
+
+myset.add(4)
+
+
+# In[17]:
+
+
+myset.add(3)
+
+
+# In[18]:
+
+
+myset
+
+
+# In[19]:
+
+
+myset1 = {1,2,3}
+myset2 = {4,5,6}
+
+myset1.difference(myset2)
+
+
+# In[20]:
+
+
+myset1.remove(2)
+
+
+# In[21]:
+
+
+myset1
+
+
+# In[22]:
+
+
+myset1.remove(4)
+
+
+# In[23]:
+
+
+myset1.discard(4)
+
+
+# In[24]:
+
+
+myset1.isdisjoint(myset2)
+
+
+# In[ ]:
+
+
+
 
