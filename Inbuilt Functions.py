@@ -334,6 +334,71 @@ myset1.discard(4)
 myset1.isdisjoint(myset2)
 
 
+# In[42]:
+
+
+#Replace all ______ with rjust, ljust or center. 
+
+thickness = 5 
+c = 'H'
+
+#Top Cone
+for i in range(thickness):
+    a = (c*i).rjust(thickness-1)+c+(c*i).ljust(thickness-1)
+    print (a)
+
+#Bottom Cone
+for i in range(thickness):
+    e= ((c*(thickness-i-1)).rjust(thickness)+c+(c*(thickness-i-1)).ljust(thickness)).rjust(thickness*6)
+    print(e)
+
+
+# In[43]:
+
+
+'abc'.center(5,'-')
+
+
+# In[48]:
+
+
+import textwrap
+a = textwrap.fill('ABCDEFGHIJKLIMNOQRSTUVWXYZ',width=4)
+print(a)
+
+
+# In[63]:
+
+
+num1 = int(input('Please enter number 1: '))
+num2 = int(input('Please enter number 2: '))
+
+print('Choose the operation to perform from the below list')
+print(' 1. Press 1 for Addition\n 2. Press 2 for Substraction\n 3. Press 3 for Multiplication\n 4. Press 4 for Division')
+oper = int(input('Press the number: '))
+
+if oper == 1:
+    print (num1 + num2)
+elif oper == 2:
+    print(num1 - num2)
+elif oper == 3:
+    print(num1 * num2)
+elif oper==4:
+    print(num1/num2)
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
+
 # In[ ]:
 
 
